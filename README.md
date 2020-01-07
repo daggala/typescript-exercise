@@ -18,6 +18,8 @@ export const mediaQueries = Object.keys(breakpoints).reduce((acc, key) => {
 }, {});
 ```
 
+<a href="hint">Below there are hints</a> (typescript compiler errors)
+
 <h1>Create React app Readme notes</h1>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -89,4 +91,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-#Hint
+<h1 id="hint">Hint</h1>
+
+There are three type definitions to be made = in total three typescript compiler errors that you will probably encounter. Each time you modify the code and test it you'll have to kill the program and rerun it (so that it compiles again)
+
+![error1](./assets/error1.png)
+
+![error1](./assets/error1.png)
+
+![error1](./assets/error1.png)
+
+[This link](https://basarat.gitbook.io/typescript/type-system/index-signatures) could also be of some help
