@@ -1,3 +1,25 @@
+<h1>Typescript Exercies</h1>
+
+This exercise was introduced in an article on my blog called ["Reusable Media Queries with styled-components"](https://daggala.com//reusable-media-queries-with-styled-components/) and the solution can be found there.
+
+The idea is to take this code here and define its types so that the compiler stops complaining, without changing the typescript config
+
+```javascript
+const breakpoints = {
+  sm: 20,
+  md: 30,
+  lg: 45,
+  xl: 60
+};
+
+export const mediaQueries = Object.keys(breakpoints).reduce((acc, key) => {
+  acc[key] = style => `@media (min-width: ${breakpoints[key]}em) { ${style} }`;
+  return acc;
+}, {});
+```
+
+<h1>Create React app Readme notes</h1>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +88,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+#Hint
